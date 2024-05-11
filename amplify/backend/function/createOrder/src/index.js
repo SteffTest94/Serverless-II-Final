@@ -2,7 +2,7 @@ const { v4: uuidv4 } = require("uuid");
 const AWS = require("aws-sdk");
 const documentClient = new AWS.DynamoDB.DocumentClient();
 
-const ORDER_TABLE = "<order_table_name>";
+const ORDER_TABLE = "us-east-1_1QN9R5GAf";
 const ORDER_TYPE = "Order";
 const BOOK_ORDER_TABLE = "<book_order_table name>";
 const BOOK_ORDER_TYPE = "BookOrder";

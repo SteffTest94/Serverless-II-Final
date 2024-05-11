@@ -24,6 +24,9 @@
       },
       "storage": {
         "BookImages": {}
+      },
+      "api": {
+        "serverlessiifinal": {}
       }
     }
   }

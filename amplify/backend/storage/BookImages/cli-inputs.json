@@ -1,7 +1,7 @@
 {
   "resourceName": "BookImages",
-  "policyUUID": "9f9705f1",
-  "bucketName": "serverlessfinal472e2a37812f47a5ad6e4f4db075ea9b",
+  "policyUUID": "79bb42d7",
+  "bucketName": "serverlessiifinal6d976d266c48437c9e14d9a4200cca",
   "storageAccess": "authAndGuest",
   "guestAccess": [
     "READ"

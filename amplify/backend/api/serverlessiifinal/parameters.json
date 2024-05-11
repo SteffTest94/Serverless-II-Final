@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "serverlessiifinal",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authserverlessiifinalc4e6a393",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

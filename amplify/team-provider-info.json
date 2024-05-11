@@ -1,23 +1,27 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-serverlessfinal-dev-857c9-authRole",
-      "UnauthRoleArn": "arn:aws:iam::211125621541:role/amplify-serverlessfinal-dev-857c9-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::211125621541:role/amplify-serverlessfinal-dev-857c9-authRole",
+      "AuthRoleName": "amplify-serverlessiifinal-dev-bed8b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::211125621541:role/amplify-serverlessiifinal-dev-bed8b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::211125621541:role/amplify-serverlessiifinal-dev-bed8b-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-serverlessfinal-dev-857c9-deployment",
-      "UnauthRoleName": "amplify-serverlessfinal-dev-857c9-unauthRole",
-      "StackName": "amplify-serverlessfinal-dev-857c9",
-      "StackId": "arn:aws:cloudformation:us-east-1:211125621541:stack/amplify-serverlessfinal-dev-857c9/0ec8fac0-0efa-11ef-9167-122ff0432687",
-      "AmplifyAppId": "d2b2g6fir12uge"
+      "DeploymentBucketName": "amplify-serverlessiifinal-dev-bed8b-deployment",
+      "UnauthRoleName": "amplify-serverlessiifinal-dev-bed8b-unauthRole",
+      "StackName": "amplify-serverlessiifinal-dev-bed8b",
+      "StackId": "arn:aws:cloudformation:us-east-1:211125621541:stack/amplify-serverlessiifinal-dev-bed8b/47dccab0-0fc9-11ef-bf2d-12bd7cd10e79",
+      "AmplifyAppId": "d2zy8setsby9vn"
     },
     "categories": {
       "auth": {
-        "serverlessfinalec4b410e": {}
+        "serverlessfinalec4b410e": {},
+        "serverlessiifinalc4e6a393": {}
       },
       "function": {
         "processPayment": {},
         "createFolder": {}
+      },
+      "storage": {
+        "BookImages": {}
       }
     }
   }

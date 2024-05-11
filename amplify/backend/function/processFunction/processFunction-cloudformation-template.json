@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "createOrder",
+            "processFunction",
             {
               "Fn::Join": [
                 "",
                 [
-                  "createOrder",
+                  "processFunction",
                   "-",
                   {
                     "Ref": "env"
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "serverlessiifinalLambdaRoled1bfbf4a",
+            "serverlessiifinalLambdaRole448432a7",
             {
               "Fn::Join": [
                 "",
                 [
-                  "serverlessiifinalLambdaRoled1bfbf4a",
+                  "serverlessiifinalLambdaRole448432a7",
                   "-",
                   {
                     "Ref": "env"

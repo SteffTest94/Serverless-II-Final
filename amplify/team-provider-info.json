@@ -17,10 +17,21 @@
         "serverlessiifinalc4e6a393": {}
       },
       "function": {
-        "processPayment": {},
+        "processPayment": {
+          "deploymentBucketName": "amplify-serverlessiifinal-dev-bed8b-deployment",
+          "s3Key": "amplify-builds/processPayment-56417963455166796777-build.zip"
+        },
         "createFolder": {},
-        "createOrder": {},
-        "delet": {}
+        "createOrder": {
+          "deploymentBucketName": "amplify-serverlessiifinal-dev-bed8b-deployment",
+          "s3Key": "amplify-builds/createOrder-7a664366424746767053-build.zip"
+        },
+        "delet": {},
+        "empty": {},
+        "processFunction": {
+          "deploymentBucketName": "amplify-serverlessiifinal-dev-bed8b-deployment",
+          "s3Key": "amplify-builds/processFunction-4341726f383138647970-build.zip"
+        }
       },
       "storage": {
         "BookImages": {}

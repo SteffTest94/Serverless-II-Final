@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { generateClient, graphqlOperation } from "aws-amplify/api";
+import { generateClient} from "aws-amplify/api";
 import { v4 as uuidv4 } from "uuid";
 import { listBooks } from "./client/queries";
 import { processOrder } from "./client/mutations";
@@ -22,7 +22,7 @@ const BookProvider = ({ children }) => {
       ...orderDetails
     };
     try {
-      await client.graphql(graphqlOperation(processOrder, { input: payload }));
+      await client.graphql((processOrder, { input: payload }));
       console.log("Order is successful");
     } catch (err) {
       console.log(err);

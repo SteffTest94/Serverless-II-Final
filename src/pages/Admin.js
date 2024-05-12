@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import { generateClient, graphqlOperation, sessionStorage } from "aws-amplify/api";
+import { generateClient } from "aws-amplify/api";
 import { Authenticator, withAuthenticator } from '@aws-amplify/ui-react';
 import { createBook } from '../context/client/mutations';
 import config from '../aws-exports';
@@ -23,7 +23,7 @@ const Admin = () => {
         e.preventDefault();
         try {
             if (!bookDetails.title || !bookDetails.price) return
-            await client.graphql(graphqlOperation(createBook, { input: bookDetails }))
+            await client.graphql((createBook, { input: bookDetails }))
             setBookDetails({ title: "", description: "", image: "", author: "", price: "" })
         } catch (err) {
             console.log('error creating todo:', err)

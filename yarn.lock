@@ -148,7 +148,7 @@
   dependencies:
     tslib "^2.5.0"
 
-"@aws-amplify/cli@4.24":
+"@aws-amplify/cli@^4.24":
   version "4.24.3"
   resolved "https://registry.npmjs.org/@aws-amplify/cli/-/cli-4.24.3.tgz"
   integrity sha512-VKvIya+INUPuFzbRkonNuidKb1Zm6x4fFoNjYQY9VHITAbJW+rc5kZ1UbW8dJzOZouvyueoCQqjjGN/6vo5oFA==

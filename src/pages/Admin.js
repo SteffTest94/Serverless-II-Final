@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import { API, graphqlOperation, Storage } from "aws-amplify";
+import { generateClient, graphqlOperation, Storage } from "aws-amplify";
 import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
-import { createBook } from '../api/mutations'
+import { createBook } from '../client/mutations'
 import config from '../aws-exports'
+const client = generateClient();
 
 const {
     aws_user_files_s3_bucket_region: region,
@@ -19,7 +20,7 @@ const Admin = () => {
         e.preventDefault();
         try {
             if (!bookDetails.title || !bookDetails.price) return
-            await API.graphql(graphqlOperation(createBook, { input: bookDetails }))
+            await client.graphql(graphqlOperation(createBook, { input: bookDetails }))
             setBookDetails({ title: "", description: "", image: "", author: "", price: "" })
         } catch (err) {
             console.log('error creating todo:', err)

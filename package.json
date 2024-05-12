@@ -5,7 +5,7 @@
   "dependencies": {
     "@aws-amplify/cli": "4.24",
     "@aws-amplify/graphql-transformer-migrator": "^2.2.23",
-    "@aws-amplify/ui-react": "^6.1.9",
+    "@aws-amplify/ui-react": "^5.0",
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.7.0",
     "@testing-library/jest-dom": "^4.2.4",

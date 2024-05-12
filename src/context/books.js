@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { API, graphqlOperation } from "aws-amplify";
+import { generateClient, graphqlOperation } from "aws-amplify";
 import { v4 as uuidv4 } from "uuid";
-import { listBooks } from "../api/queries";
-import { processOrder } from "../api/mutations";
+import { listBooks } from "../client/queries";
+import { processOrder } from "../client/mutations";
+
+const client = generateClient();
 
 const BookContext = React.createContext();
 
@@ -21,7 +23,7 @@ const BookProvider = ({ children }) => {
       ...orderDetails
     };
     try {
-      await API.graphql(graphqlOperation(processOrder, { input: payload }));
+      await client.graphql(graphqlOperation(processOrder, { input: payload }));
       console.log("Order is successful");
     } catch (err) {
       console.log(err);
@@ -31,10 +33,10 @@ const BookProvider = ({ children }) => {
   const fetchBooks = async () => {
     try {
       setLoading(true);
-      // Switch authMode to API_KEY for public access
-      const { data } = await API.graphql({
+      // Switch authMode to client_KEY for public access
+      const { data } = await client.graphql({
         query: listBooks,
-        authMode: "API_KEY"
+        authMode: "client_KEY"
       });
       const books = data.listBooks.items;
       const featured = books.filter((book) => {

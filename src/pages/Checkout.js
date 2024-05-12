@@ -1,4 +1,5 @@
 import React from 'react'
+import '@aws-amplify/ui-react/styles.css';
 import { AmplifyAuthenticator } from '@aws-amplify/ui-react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';

@@ -43,14 +43,14 @@ h5 {
 }
 
 a {
-  color: white;
+  color: rgb(219, 152, 218);
   text-decoration: none;
 }
 
 .btn {
   padding: 2rem 6rem;
-  background: #4c6e97;
-  color: white;
+  background: plum;
+  color: purple;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -62,8 +62,8 @@ a {
 /* Nav Section */
 
 .main-head {
-  background: #131c27;
-  color: white;
+  background: #28083c;
+  color: rgb(209, 158, 239);
 }
 
 nav {
@@ -93,12 +93,12 @@ nav ul {
 /* Hero Section */
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./assets/hero-background.jpg);
+  background: linear-gradient(rgba(137, 53, 210, 0.5), transparent), url(./assets/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 43vh;
-  color: white;
+  color: rgb(213, 186, 216);
   display: flex;
   flex-direction: column;
   justify-content: center;

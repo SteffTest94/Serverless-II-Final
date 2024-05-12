@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import { generateClient, graphqlOperation, Storage } from "aws-amplify";
+import { generateClient, graphqlOperation, sessionStorage } from "aws-amplify/api";
 import { Authenticator, withAuthenticator } from '@aws-amplify/ui-react';
 import { createBook } from '../context/client/mutations';
 import config from '../aws-exports';
@@ -39,12 +39,12 @@ const Admin = () => {
         const url = `https://${bucket}.s3.${region}.amazonaws.com/public/${key}`
         try {
             // Upload the file to s3 with public access level. 
-            await Storage.put(key, file, {
+            await sessionStorage.put(key, file, {
                 level: 'public',
                 contentType: file.type
             });
             // Retrieve the uploaded file to display
-            const image = await Storage.get(key, { level: 'public' })
+            const image = await sessionStorage.get(key, { level: 'public' })
             setImage(image);
             setBookDetails({ ...bookDetails, image: url });
         } catch (err) {

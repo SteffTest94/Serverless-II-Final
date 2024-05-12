@@ -4,3 +4,4 @@ changed all API imports to proper generateClient code
 moved necessary fiels from video resources to src code files
 installed latest amplify ui-react
 changed {AmplifyAuthenticator} cases to {Authenticator, withAuthenticator}
+adjusted multiple other source issues

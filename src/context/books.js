@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { generateClient, graphqlOperation } from "aws-amplify";
+import { generateClient, graphqlOperation } from "aws-amplify/api";
 import { v4 as uuidv4 } from "uuid";
 import { listBooks } from "./client/queries";
 import { processOrder } from "./client/mutations";

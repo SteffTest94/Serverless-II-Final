@@ -9,7 +9,7 @@
       "secondarykeyasgsi": true,
       "skipoverridemutationinputtypes": true,
       "transformerversion": 1,
-      "suppressschemamigrationprompt": false,
+      "suppressschemamigrationprompt": true,
       "securityenhancementnotification": false,
       "showfieldauthnotification": false,
       "usesubusernamefordefaultidentityclaim": true,

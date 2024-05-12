@@ -141,7 +141,7 @@
     "@aws-amplify/api-rest" "4.0.30"
     tslib "^2.5.0"
 
-"@aws-amplify/auth@6.3.0":
+"@aws-amplify/auth@^6.3.0", "@aws-amplify/auth@6.3.0":
   version "6.3.0"
   resolved "https://registry.npmjs.org/@aws-amplify/auth/-/auth-6.3.0.tgz"
   integrity sha512-1H71dAomR1cO+myiOzeBJeuOoNm0dpzLxmNtM5wmSFFoT+dkC/S2OauOLQHBSd3CbfmoP78IRpxeexNG0jVuaQ==

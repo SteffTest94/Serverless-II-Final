@@ -8,7 +8,7 @@
     "javascript": {
         "framework": "react",
         "config": {
-            "SourceDir": "/Users/steffenturner/Library/CloudStorage/OneDrive-WSUTech/1React/Serverless-II-Final",
+            "SourceDir": "src",
             "DistributionDir": "build",
             "BuildCommand": "npm run-script build",
             "StartCommand": "npm run-script start"

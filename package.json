@@ -11,7 +11,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "aws-amplify": "^6.3.0",
     "axios": "^1.6.8",
     "react": "^16.14.0",
     "react-dom": "^16.13.1",
@@ -24,7 +23,7 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start", 
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -35,7 +34,7 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead", 
+      "not dead",
       "not op_mini all"
     ],
     "development": [
